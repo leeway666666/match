@@ -1,9 +1,11 @@
 package com.hut.userbackend;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("com.hut.userbackend.mapper")
 public class UserBackendApplication {
 
     public static void main(String[] args) {
